@@ -51,9 +51,10 @@
         }
 
         &-portrait {
-            background: url('../dist/img/portrait.jpg');
-            width: 150px;
-            height: 150px;
+            img {
+                width: 150px;
+                height: 150px;
+            }
         }
     }
 
