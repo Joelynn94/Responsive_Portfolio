@@ -84,14 +84,49 @@
             // Slide in from bottom
             transform: translate3d(0, 0, 0);
         }
+    }
+    &-portrait {
+        width: 250px;
+        height: 250px;
+        background: url('../dist/img/background.jpg');
+        border-radius: 50%;
+        border: solid 5px $secondary-color;
+    }
 
-        .portrait {
-            width: 250px;
-            height: 250px;
-            background: url('../dist/img/portrait.jpg');
-            border-radius: 50%;
-            border: solid 5px $secondary-color;
+    &-item {
+        transform: translate3d(600px, 0, 0);
+        @include easeOut;
+
+        &.show {
+            // Slide in from right
+            transform: translate3d(0, 0, 0);
         }
+
+        &.current > a {
+            color: $secondary-color;
+        }
+    }
+
+    &-link {
+        display: inline-block;
+        position: relative;
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding: 1rem;
+        font-weight: 300;
+        color: #fff;
+        @include easeOut;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+// Delay each menu item slide by 0.1s
+@for $x from 1 through 4 {
+    .menu-item:nth-child(#{$x}) {
+        transition-delay: $x * 0.1s;
     }
 }
 

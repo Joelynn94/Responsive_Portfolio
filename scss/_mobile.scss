@@ -1,0 +1,62 @@
+// Widescreens 
+@include xl {
+
+}
+
+// Desktops & Laptops 
+@include lg {
+
+}
+
+// Tablets & Small Laptops
+@include md {
+    main {
+        align-items: center;
+        text-align: center;
+
+        .lg-heading {
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .menu {
+        &-nav,
+        &-branding {
+            float: none;
+            width: 100%;
+        }
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+        }
+
+        &-nav {
+            height: 75vh;
+            transform: translate3d(-100%, 0, 0);
+        }
+
+        &-link {
+            font-size: 1.75rem;
+        }
+
+        &-branding {
+            height: 25vh;
+            transform: translate3d(100%, 0, 0);
+
+        }
+
+        &-portrait {
+            background: url('../dist/img/portrait.jpg');
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+// Smarphones 
+@include sm {
+    #home h1 {
+        margin-top: 10vh;
+    }
+}
