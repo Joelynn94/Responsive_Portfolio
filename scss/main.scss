@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
+@import 'about';
 
 * {
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 body {
     @include background;
     background: $primary-color;
-    color: #fff;
+    color: set-text-color($primary-color);
     height: 100vh;
     margin: 0;
     line-height: 1.5;
@@ -35,7 +35,7 @@ h3 {
 }
 
 a {
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
 }
 
@@ -51,6 +51,7 @@ header {
 
 main {
     padding: 4rem;
+    min-height: calc(100vh - 60px);
 
     .icons {
         margin-top: 1rem;
@@ -78,4 +79,5 @@ main {
 
 
 
+@import 'mobile';
 

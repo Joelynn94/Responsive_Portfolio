@@ -88,7 +88,7 @@
     &-portrait {
         width: 250px;
         height: 250px;
-        background: url('../dist/img/background.jpg');
+        background: url('../dist/img/portrait.jpg');
         border-radius: 50%;
         border: solid 5px $secondary-color;
     }
@@ -114,7 +114,7 @@
         text-transform: uppercase;
         padding: 1rem;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         @include easeOut;
 
         &:hover {
