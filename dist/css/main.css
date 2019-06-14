@@ -104,7 +104,7 @@
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "aboutimg aboutbio aboutbio"  "job1 job2 job3"; }
+  grid-template-areas: "aboutimg bio ."  "job1 job2 job3"; }
 
 .about-img {
   grid-area: aboutimg;
@@ -113,7 +113,8 @@
   border: #57BFCB 3px solid; }
 
 .about .bio {
-  grid-area: aboutbio;
+  grid-area: bio;
+  grid-column: 2 / -1;
   font-size: 1.5rem; }
 
 .about .job1 {
