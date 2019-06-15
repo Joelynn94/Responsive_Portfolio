@@ -83,14 +83,15 @@
             margin-top: 10vh;
         }
 
-        h1.lg-heading {
-            margin-top: 1rem;
-            font-size: 5rem;
-        }
-
         .projects {
             grid-template-columns: 1fr;
         }
+
+    }
+
+    h1.lg-heading {
+        margin-top: 1rem;
+        font-size: 5rem;
     }
 }
 
