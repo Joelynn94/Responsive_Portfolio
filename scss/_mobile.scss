@@ -21,6 +21,8 @@
         .lg-heading {
             line-height: 1;
             margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-size: 5rem;
         }
     }
 
@@ -87,11 +89,6 @@
             grid-template-columns: 1fr;
         }
 
-    }
-
-    h1.lg-heading {
-        margin-top: 1rem;
-        font-size: 5rem;
     }
 }
 
